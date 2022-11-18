@@ -1192,14 +1192,18 @@ a {
     overflow: scroll;
   }
 
+  .container-full {
+    width: 100%;
+  }
+
   .container {
-    height: 450px;
+    height: 120rem;
   }
 
   .container2 {
     position: absolute;
     bottom: -215%;
-    height: 1600px;
+    height: 116.875rem;
   }
 
   header {
@@ -1209,10 +1213,10 @@ a {
   }
 
   header h1 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.875rem;
+    line-height: 2.188rem;
     text-align: center;
-    margin: 80px auto 20px;
+    margin: 18% auto 6%;
   }
 
   .plans {
@@ -1227,10 +1231,6 @@ a {
     height: auto;
   }
 
-  .plan-free {
-    height: 425px;
-  }
-
   .plan-free,
   .plan-basic,
   .plan-profissional {
@@ -1241,16 +1241,16 @@ a {
 
   .plan-free .value,
   .plan-profissional .value {
-    margin: 0 0 10px 20px;
+    margin: 0 0 0 10%;
   }
 
   .value .description-plan {
     width: 100%;
-    font-size: 15px;
+    font-size: 90%;
   }
 
   .divisor {
-    width: 220px;
+    width: 13.75rem;
   }
 
   .advantages {
@@ -1258,14 +1258,14 @@ a {
   }
 
   .plan-free .advantages {
-    margin: 0px 0px 100px 2px;
-    width: 239px;
-    height: 70px;
+    margin: 0 0 40% 0;
+    width: 100%;
+    height: 4.375rem;
   }
 
   .button-advantage {
     width: 80%;
-    margin: 5px auto 10px;
+    margin: 10% auto 5%;
     height: 10px;
   }
 
@@ -1278,22 +1278,26 @@ a {
   }
 
   .plan-basic .title-value {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 
   .plan-basic .advantages {
-    margin: 0px 0 160px 0;
+    margin: 0px 0 77% 0;
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
   }
 
   .plan-profissional .advantages {
-    margin: 10px 0px 220px 0px;
+    margin: 0 0 100% 0;
     width: 100%;
   }
 
   .credits {
     margin-top: 5%;
     margin-bottom: 10%;
+  }
+
+  .credits::after {
+    content: " ❤";
   }
 }
