@@ -923,6 +923,10 @@ a {
     margin-top: 5%;
     font-size: 16px;
   }
+
+  .credits::after {
+    content: " 💖";
+  }
 }
 
 @media (max-width: 425px) {
@@ -1078,6 +1082,10 @@ a {
     margin-top: 5%;
     font-size: 14px;
   }
+
+  .credits::after {
+    content: " 💕";
+  }
 }
 
 @media (max-width: 375px) {
@@ -1184,6 +1192,10 @@ a {
 
   .credits {
     margin-top: 16%;
+  }
+
+  .credits::after {
+    content: " 💜";
   }
 }
 
