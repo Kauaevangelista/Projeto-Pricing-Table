@@ -1202,7 +1202,7 @@ a {
 
   .container2 {
     position: absolute;
-    bottom: -215%;
+    bottom: -255%;
     height: 116.875rem;
   }
 
@@ -1293,8 +1293,7 @@ a {
   }
 
   .credits {
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 25%;
   }
 
   .credits::after {
