@@ -7,7 +7,7 @@
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #ffffff;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container-full {
@@ -18,75 +18,96 @@ body {
 }
 
 .container {
-  height: 450px;
+  height: 45vh;
   width: 100%;
   background-color: #1d539e;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .container2 {
   position: absolute;
-  bottom: -42%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  bottom: -30vh;
 }
 
 .content {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 21vh;
+}
+
+header {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 header h1 {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 65px;
-  margin: 100px auto 20px;
+  font-size: 3rem;
+  line-height: 4.063rem;
+  margin: 6% auto 2%;
 }
 
 header .sub-title {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  /* margin-bottom: 65px; */
+  font-size: 1.125rem;
+  line-height: 1.563rem;
   text-align: center;
   width: 89%;
 }
 
 .plans {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   color: #1e2338;
   margin: 0 auto;
   justify-content: center;
+  width: 95vw;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 .plan {
   background-color: #ffffff;
-  border-radius: 8px;
-  width: 355px;
-  height: 470px;
+  border-radius: 0.652rem;
+  width: 29vw;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
 
 .plan-free,
 .plan-profissional {
-  margin-top: 75px;
+  margin-top: 5.8%;
 }
 
 .plan-basic {
-  margin-top: 65px;
-  border-radius: 8px;
+  margin-top: 5.2%;
+}
+
+.popular {
+  width: 100%;
 }
 
 .agroup-basic-popular {
-  width: 355px;
-  height: 76px;
+  width: 100%;
+  height: auto;
   background: #ffcc29;
-  box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
-  border-radius: 8px;
+  box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+  border-radius: 0.625rem;
 }
 
 .agroup-basic-popular {
@@ -96,113 +117,124 @@ header .sub-title {
 }
 
 .paragraph-basic {
-  width: 63px;
-  height: 27px;
+  width: 24%;
+  height: 30%;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 1.25rem;
+  line-height: 1.688rem;
   color: #1d539e;
-  margin: 25px 0 24px 30px;
+  margin: 6% 0 6% 6%;
 }
 
 .border {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 24px;
-  width: 94px;
-  height: 32px;
+  padding: 2%;
+  width: 22%;
+  height: auto;
   background: #1d539e;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 90%;
+  line-height: 1rem;
   color: #ffffff;
-  margin: 22px 20px;
+  margin: 5%;
 }
 
 .plan-basic .value {
-  margin: 10px 30px;
+  margin: 3% 6%;
 }
 
 .plan-free .value,
 .plan-profissional .value {
-  margin: 0 0 10px 29px;
+  margin: 0 0 3% 6%;
 }
 
 .value .paragraph-plan-basic,
 .value .paragraph-plan-profissional {
-  margin: 30px 0 20px 10px;
+  margin: 7% 0 5.5% 3%;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
 }
 
 .value .title-value {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 49px;
+  font-size: 2.25rem;
+  line-height: 3.063rem;
 }
 
 .value .title-value .small {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
 }
 
 .value .title-value .small .gray {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
   color: #828799;
-  margin-left: 5px;
+  margin-left: 1.5%;
 }
 
 .value .description-plan {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
   color: #828799;
-  margin: 10px 33px 20px 0px;
-  width: 291px;
+  margin: 3% 2.063rem 5% 0;
+  width: 87%;
 }
 
 .divisor {
-  width: 295px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .advantages {
-  margin: 20px 33px 120px 29px;
-  width: 294px;
-  height: 58px;
+  margin: 4% 8% 20% 7%;
+  width: 90%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
 }
 
+.plan-profissional .advantages {
+  margin-bottom: 18%;
+}
+
 .advantages .img-check {
-  width: 18px;
-  height: 18px;
-  margin-right: 15px;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: 0.938rem;
 }
 
 .advantage {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 3%;
+  margin-right: 10%;
 }
 
 .advantages .advantage:nth-of-type(1) {
   margin-top: 0;
 }
 
+.plan-free .advantages .advantage:nth-last-of-type(1) {
+  margin-bottom: 17.6%;
+}
+
 .button-advantage {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 296px;
-  height: 49px;
-  border: 1px solid #1d539e;
-  border-radius: 10px;
+  width: 90%;
+  height: 3.063rem;
+  border: 0.063rem solid #1d539e;
+  border-radius: 0.625rem;
+  margin: 0 auto;
 }
 
 .plan-free .button-advantage:hover,
@@ -222,20 +254,20 @@ header .sub-title {
 }
 
 .plan-basic .advantages {
-  margin-bottom: 100px;
+  margin-bottom: 23%;
 }
 
 button {
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
   border: none;
   color: #1d539e;
   background-color: transparent;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .plan-basic .button-advantage,
@@ -244,1071 +276,3016 @@ button {
   color: #ffffff;
 }
 
+footer {
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+
 .credits h4,
 a {
   color: #1d539e;
-  margin-top: 5%;
-  margin-bottom: 100px;
   text-align: center;
 }
 
-@media (max-width: 1700px) {
-  body {
-    overflow: scroll;
-  }
-
-  .container-full {
-    height: 800px;
-  }
-
-  .container2 {
-    position: absolute;
-    bottom: -25%;
-    width: 100%;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 54px;
-  }
-
-  header .sub-title {
-    font-size: 24px;
-    line-height: 40px;
-  }
-
-  .plan {
-    width: 30%;
-    height: auto;
-    align-items: center;
-    padding-bottom: 50px;
-  }
-
-  .plan-free .value,
-  .plan-profissional .value {
-    margin: 10px 0;
-  }
-
-  .plan-basic .value {
-    margin: 30px;
-  }
-
-  .value .paragraph-plan-basic,
-  .value .paragraph-plan-profissional {
-    margin-left: 0;
-    margin-bottom: 40px;
-    font-size: 30px;
-  }
-
-  .value .title-value {
-    font-size: 50px;
-  }
-
-  .value .description-plan {
-    font-size: 29px;
-    line-height: 50px;
-    margin: 20px auto;
-  }
-
-  .divisor {
-    width: 350px;
-  }
-
-  .advantages {
-    width: 78%;
-  }
-
-  .advantage {
-    font-size: 28px;
-  }
-
-  .button-advantage {
-    margin-top: 100px;
-    width: 65%;
-    padding-bottom: 50px;
-    height: 10%;
-  }
-
-  .button-advantage button {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-size: 24px;
-  }
-
-  .popular,
-  .agroup-basic-popular {
-    width: 100%;
-  }
-
-  .paragraph-basic {
-    font-size: 30px;
-  }
-
-  .border {
-    height: 50px;
-    font-size: 17px;
-  }
-
-  .popular {
-    display: contents;
-  }
-
-  .credits {
-    font-size: 22px;
-  }
-}
-
 @media (max-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   body {
-    overflow: scroll;
-  }
-
-  .container-full {
-    height: 800px;
-  }
-
-  .container2 {
-    position: absolute;
-    bottom: -42%;
-    width: 100%;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 54px;
-  }
-
-  header .sub-title {
-    font-size: 24px;
-    line-height: 40px;
-  }
-
-  .plan {
-    width: 30%;
-    height: auto;
-    align-items: center;
-  }
-
-  .plan-free .value,
-  .plan-profissional .value {
-    margin: 10px 0;
-  }
-
-  .plan-basic .value {
-    margin: 10px 30px;
-  }
-
-  .value .paragraph-plan-basic,
-  .value .paragraph-plan-profissional {
-    margin-left: 0;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-
-  .value .title-value {
-    font-size: 40px;
-  }
-
-  .value .description-plan {
-    font-size: 20px;
-    line-height: 24px;
-    margin: 20px 33px 20px 0px;
-  }
-
-  .divisor {
-    width: 350px;
-  }
-
-  .advantages {
-    width: 294px;
-  }
-
-  .advantage {
-    font-size: 18px;
-  }
-
-  .button-advantage {
-    margin-top: 10px;
-    width: 296px;
-    height: 49px;
-    padding-bottom: 0;
-  }
-
-  .button-advantage button {
-    display: unset;
-    margin-top: 20px;
-    font-size: 22px;
-    padding-bottom: 50px;
-  }
-
-  .popular,
-  .agroup-basic-popular {
-    width: 100%;
-  }
-
-  .paragraph-basic {
-    font-size: 30px;
-  }
-
-  .border {
-    height: 50px;
-    font-size: 17px;
-  }
-
-  .popular {
-    display: contents;
-  }
-
-  .credits {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 1024px) {
-  body {
-    overflow: scroll;
-  }
-
-  .container-full {
-    height: 1500px;
-  }
-
-  .container2 {
-    position: absolute;
-    bottom: -98%;
-    width: 100%;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 48px;
-  }
-
-  header .sub-title {
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .plans {
-    flex-wrap: wrap;
-    width: 80%;
-  }
-
-  .plan {
-    width: 48%;
-    align-items: center;
-    border: 2px solid #1d539e;
-    height: auto;
-    padding-bottom: 0;
-  }
-
-  .plan:hover {
-    border: 2px solid #1e2338;
-    transition: 0.5s ease;
-  }
-
-  .plan-free .value,
-  .plan-profissional .value {
-    margin: 0 0 10px 29px;
-  }
-
-  .value .paragraph-plan-basic,
-  .value .paragraph-plan-profissional {
-    margin: 30px 0 20px 10px;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 25px;
-  }
-
-  .value .title-value {
-    font-size: 36px;
-  }
-
-  .value .description-plan {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #828799;
-    margin: 10px 33px 20px 0px;
-    width: 291px;
-  }
-
-  .divisor {
-    width: 280px;
-  }
-
-  .plan-free,
-  .plan-basic {
-    margin-top: 75px;
-  }
-  .value .description-plan {
-    width: 99%;
-  }
-  .divisor {
-    width: 340px;
-  }
-
-  .plan-basic .advantages {
-    margin-bottom: 88px;
-  }
-
-  .advantages {
-    margin: 20px 0 100px 60px;
-    width: 88%;
-  }
-
-  .advantage {
-    font-size: 18px;
-  }
-
-  .button-advantage {
-    margin-top: 10px;
-    width: 65%;
-    padding-bottom: 50px;
-    height: 10%;
-  }
-
-  .button-advantage button {
-    font-size: 18px;
-    display: unset;
-    padding-bottom: 0;
-    margin-top: 20px;
-  }
-
-  .popular,
-  .agroup-basic-popular {
-    width: 100%;
-  }
-
-  .paragraph-basic {
-    font-size: 20px;
-  }
-  .border {
-    height: 32px;
-    font-size: 12px;
-  }
-
-  .popular {
-    display: contents;
-  }
-
-  .credits {
-    font-size: 21px;
-  }
-}
-
-@media (max-width: 810px) {
-  body {
-    overflow: scroll;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
     overflow-x: hidden;
   }
 
   .container-full {
-    height: 1120px;
-  }
-
-  .container2 {
-    position: absolute;
-    bottom: -158%;
-    width: 100%;
-  }
-
-  header {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  header h1 {
-    font-size: 48px;
-  }
-
-  header .sub-title {
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .plans {
-    flex-wrap: wrap;
-    width: 95%;
-  }
-
-  .plan {
-    width: 48%;
-    align-items: center;
-    border: 2px solid #1d539e;
-    height: auto;
-    padding-bottom: 0;
-  }
-
-  .plan:hover {
-    border: 2px solid #1e2338;
-    transition: 0.5s ease;
-  }
-
-  .plan-free .value,
-  .plan-profissional .value {
-    margin: 0 0 10px 29px;
-  }
-
-  .value .paragraph-plan-basic,
-  .value .paragraph-plan-profissional {
-    margin: 30px 0 20px 10px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .value .title-value {
-    font-size: 36px;
-  }
-
-  .value .description-plan {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #828799;
-    margin: 10px 33px 20px 0px;
-    width: 291px;
-  }
-
-  .plan-free,
-  .plan-basic {
-    margin-top: 75px;
-  }
-
-  .plan-profissional {
-    margin-top: 0;
-  }
-
-  .value .description-plan {
-    width: 98%;
-  }
-  .divisor {
-    width: 340px;
-  }
-
-  .plan-basic .advantages {
-    margin-bottom: 88px;
-  }
-
-  .advantages {
-    margin: 20px 0 100px 60px;
-    width: 88%;
-  }
-
-  .advantage {
-    font-size: 18px;
-  }
-
-  .button-advantage {
-    margin-top: 40px;
-    width: 296px;
-    padding-bottom: 50px;
-    height: 10%;
-  }
-
-  .button-advantage button {
-    font-size: 18px;
-    display: unset;
-    padding-bottom: 0;
-    margin-top: 20px;
-  }
-
-  .popular,
-  .agroup-basic-popular {
-    width: 100%;
-  }
-
-  .paragraph-basic {
-    font-size: 20px;
-  }
-  .border {
-    height: 32px;
-    font-size: 12px;
-  }
-
-  .popular {
-    display: contents;
-  }
-
-  .credits {
-    font-size: 19px;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    overflow: scroll;
   }
 
   .container {
-    height: 435px;
-  }
-
-  .container2 {
-    position: absolute;
-    bottom: -195%;
-    height: 1530px;
-  }
-
-  .content {
-    width: 90%;
-  }
-
-  header {
+    height: 51vh;
+    width: 100%;
+    background-color: #1d539e;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  header h1 {
-    font-size: 30px;
-    line-height: 35px;
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -22vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
-    margin: 80px auto 20px;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
   }
 
   header .sub-title {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
     text-align: center;
     width: 89%;
   }
 
   .plans {
-    margin: 0;
-    justify-content: unset;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
   }
 
   .plan {
-    width: 355px;
-    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 29vw;
     height: auto;
-    padding-bottom: 0;
-  }
-
-  .plan-free {
-    height: 425px;
+    display: flex;
+    flex-direction: column;
   }
 
   .plan-free,
-  .plan-basic,
   .plan-profissional {
-    margin-top: 0;
-    width: 75%;
+    margin-top: 5.8%;
   }
 
-  .plan-free .value,
-  .plan-profissional .value {
-    margin: 0 0 10px 20px;
-  }
-
-  .value .paragraph-plan-basic,
-  .value .paragraph-plan-profissional {
-    margin: 30px 0 20px 10px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .value .title-value {
-    font-size: 36px;
-  }
-
-  .value .description-plan {
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 19px;
-    color: #828799;
-    margin: 10px 33px 20px 0px;
-  }
-
-  .divisor {
-    width: 220px;
-  }
-
-  .plan-free .advantages {
-    margin: 0px 0px 70px 2px;
-    width: 80%;
-    height: 70px;
-  }
-
-  .button-advantage {
-    width: 90%;
-    margin: 0 auto;
-    height: 12%;
+  .plan-basic {
+    margin-top: 5.2%;
   }
 
   .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
     display: flex;
-    flex-wrap: wrap;
-  }
-  .agroup-basic-popular {
-    width: 100%;
-  }
-
-  .plan-basic .title-value {
-    margin-top: 10px;
-  }
-
-  .plan-basic .advantages {
-    margin: 10px 0 100px 0;
-    width: 83%;
-    height: 40px;
-  }
-
-  .plan-profissional .advantages {
-    margin: 10px 0px 120px 0px;
-    width: 80%;
-  }
-
-  .advantage {
-    font-size: 18px;
-  }
-
-  .button-advantage {
-    width: 70%;
-    margin: 0 auto;
-    height: 40px;
-    margin-bottom: 25px;
-  }
-
-  .button-advantage button {
-    font-size: 18px;
-    display: unset;
-    padding-bottom: 0;
-    margin-top: 20px;
-  }
-
-  .popular,
-  .agroup-basic-popular {
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .paragraph-basic {
-    font-size: 20px;
-  }
-  .border {
-    height: 32px;
-    font-size: 12px;
-  }
-
-  .popular {
-    display: contents;
-  }
-
-  .credits {
-    margin-top: 5%;
-    font-size: 16px;
-  }
-
-  .credits::after {
-    content: " 💖";
-  }
-}
-
-@media (max-width: 425px) {
-  body {
-    overflow: scroll;
-  }
-
-  .container {
-    height: 435px;
-  }
-
-  .container2 {
-    position: absolute;
-    bottom: -200%;
-    height: 1570px;
-  }
-
-  .content {
-    width: 90%;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 30px;
-    line-height: 35px;
-    text-align: center;
-    margin: 80px auto 20px;
-  }
-
-  .plans {
-    margin: 0;
-    justify-content: unset;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  .plan {
-    width: 355px;
-    align-items: center;
-    height: auto;
-    padding-bottom: 0;
-  }
-
-  .plan-free {
-    height: 425px;
-  }
-
-  .plan-free,
-  .plan-basic,
-  .plan-profissional {
-    margin-top: 0;
-    width: 75%;
-    height: auto;
-  }
-
-  .value .paragraph-plan-basic,
-  .value .paragraph-plan-profissional {
-    margin: 30px 0 20px 10px;
+    width: 24%;
+    height: 30%;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
   }
 
-  .value .title-value {
-    font-size: 36px;
-  }
-
-  .value .description-plan {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    color: #828799;
-    margin: 10px 33px 20px 0px;
-    width: 291px;
-  }
-
-  .plan-free .value,
-  .plan-profissional .value {
-    margin: 0 0 10px 20px;
-  }
-
-  .value .description-plan {
-    width: 100%;
-    font-size: 15px;
-  }
-
-  .divisor {
-    width: 220px;
-  }
-
-  .plan-free .advantages {
-    margin: 0px 0px 70px 2px;
-    width: 239px;
-    height: 70px;
-  }
-
-  .button-advantage {
-    width: 80%;
-    margin: 5px auto 10px;
-    height: 10px;
-  }
-
-  .popular {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .agroup-basic-popular {
-    width: 100%;
-  }
-
-  .plan-basic .title-value {
-    margin-top: 10px;
-  }
-
-  .plan-basic .advantages {
-    margin: 10px 0 100px 0;
-    width: 86%;
-    height: 40px;
-  }
-
-  .plan-profissional .advantages {
-    margin: 10px 0px 120px 0px;
-    width: 83%;
-  }
-
-  .advantage {
-    font-size: 17px;
-  }
-  .popular,
-  .agroup-basic-popular {
-    width: 100%;
-  }
-
-  .paragraph-basic {
-    font-size: 20px;
-  }
   .border {
-    height: 32px;
-    font-size: 12px;
-  }
-
-  .popular {
-    display: contents;
-  }
-
-  .credits {
-    margin-top: 5%;
-    font-size: 14px;
-  }
-
-  .credits::after {
-    content: " 💕";
-  }
-}
-
-@media (max-width: 375px) {
-  body {
-    overflow: scroll;
-  }
-
-  .container {
-    height: 435px;
-  }
-
-  .container2 {
-    position: absolute;
-    bottom: -210%;
-    height: 1570px;
-  }
-
-  .content {
-    width: 90%;
-  }
-
-  header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-
-  header h1 {
-    font-size: 30px;
-    line-height: 35px;
-    text-align: center;
-    margin: 80px auto 20px;
-  }
-
-  .plans {
-    margin: 0;
-    justify-content: unset;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  .plan-free {
-    height: 425px;
-  }
-
-  .plan-free,
-  .plan-basic,
-  .plan-profissional {
-    margin-top: 0;
-    width: 75%;
+    padding: 2%;
+    width: 22%;
     height: auto;
-  }
-
-  .plan-free .value,
-  .plan-profissional .value {
-    margin: 0 0 10px 20px;
-  }
-
-  .value .description-plan {
-    width: 100%;
-    font-size: 15px;
-  }
-
-  .divisor {
-    width: 220px;
-  }
-
-  .plan-free .advantages {
-    margin: 0px 0px 70px 2px;
-    width: 239px;
-    height: 70px;
-  }
-
-  .button-advantage {
-    width: 80%;
-    margin: 5px auto 10px;
-    height: 10px;
-  }
-
-  .popular {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .agroup-basic-popular {
-    width: 100%;
-  }
-
-  .plan-basic .title-value {
-    margin-top: 10px;
-  }
-
-  .plan-basic .advantages {
-    margin: 10px 0 100px 0;
-    width: 87%;
-    height: 40px;
-    margin-bottom: 170px;
-  }
-
-  .plan-profissional .advantages {
-    margin: 10px 0px 220px 0px;
-    width: 84%;
-  }
-
-  .credits {
-    margin-top: 16%;
-  }
-
-  .credits::after {
-    content: " 💜";
-  }
-}
-
-@media (max-width: 320px) {
-  body {
-    overflow: scroll;
-  }
-
-  .container-full {
-    width: 100%;
-  }
-
-  .container {
-    height: 120rem;
-  }
-
-  .container2 {
-    position: absolute;
-    bottom: -255%;
-    height: 116.875rem;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 1.875rem;
-    line-height: 2.188rem;
-    text-align: center;
-    margin: 18% auto 6%;
-  }
-
-  .plans {
-    margin: 0;
-    justify-content: unset;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-
-  .plan {
-    height: auto;
-  }
-
-  .plan-free,
-  .plan-basic,
-  .plan-profissional {
-    margin-top: 0;
-    width: 75%;
-    height: auto;
-  }
-
-  .plan-free .value,
-  .plan-profissional .value {
-    margin: 0 0 0 10%;
-  }
-
-  .value .description-plan {
-    width: 100%;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
     font-size: 90%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 5% 0;
+    width: 87%;
   }
 
   .divisor {
-    width: 13.75rem;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .advantages {
-    padding: 25px;
-  }
-
-  .plan-free .advantages {
-    margin: 0 0 40% 0;
-    width: 100%;
-    height: 4.375rem;
-  }
-
-  .button-advantage {
-    width: 80%;
-    margin: 10% auto 5%;
-    height: 10px;
-  }
-
-  .popular {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
   }
-  .agroup-basic-popular {
-    width: 100%;
+
+  .plan-profissional .advantages {
+    margin-bottom: 18%;
   }
 
-  .plan-basic .title-value {
-    margin-top: 0.625rem;
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
   }
 
   .plan-basic .advantages {
-    margin: 0px 0 77% 0;
+    margin-bottom: 23%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
     width: 100%;
-    height: 2.5rem;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1380px) {
+  .container2 {
+    bottom: -26vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 51vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -30vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 29vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.2%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 22%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 90%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 5% 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .plan-profissional .advantages {
-    margin: 0 0 100% 0;
+    margin-bottom: 18%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 23%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1019px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 59vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -37vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 29vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.2%;
+  }
+
+  .popular {
     width: 100%;
   }
 
-  .credits {
-    margin-top: 25%;
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
   }
 
-  .credits::after {
-    content: " ❤";
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 22%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 90%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 5% 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-free .advantages {
+    margin-bottom: 37%;
+  }
+
+  .plan-profissional .advantages {
+    margin-bottom: 18%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 23%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 835px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 55vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -28vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 29vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.2%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 22%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 75%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 2.05rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 5% 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-free .advantages {
+    margin-bottom: 44%;
+  }
+
+  .plan-profissional .advantages {
+    margin-bottom: 18%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 23%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 716px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 55vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -37vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 29vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.2%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 30%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 75%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 1.85rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 5% 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-free .advantages {
+    margin-bottom: 51%;
+  }
+
+  .plan-profissional .advantages {
+    margin-bottom: 18%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 23%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 58vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -38vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 42vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1d539e;
+  }
+
+  .plan:hover {
+    border: 1px solid #1e2338;
+    transition: 0.5s;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.8%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 30%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 72%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 1.65rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 5% 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-free .advantages {
+    margin-bottom: 30%;
+  }
+
+  .plan-profissional .advantages {
+    margin-bottom: 18%;
+  }
+
+  .plan-profissional {
+    margin-top: 1%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 23%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 483px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 58vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -42vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 42vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1d539e;
+  }
+
+  .plan:hover {
+    border: 1px solid #1e2338;
+    transition: 0.5s;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.8%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 30%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 72%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 1.65rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 5% 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-free .advantages {
+    margin-bottom: 35%;
+  }
+
+  .plan-profissional .advantages {
+    margin-bottom: 18%;
+  }
+
+  .plan-profissional {
+    margin-top: 1%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 23%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 433px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 58vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -42vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1d539e;
+  }
+
+  .plan:hover {
+    border: 1px solid #1e2338;
+    transition: 0.5s;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.8%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 33%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 80%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.425rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 1.175rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 0 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-free .advantages {
+    margin-bottom: 0;
+  }
+
+  .plan-profissional .advantages {
+    margin-bottom: 11%;
+  }
+
+  .plan-profissional {
+    margin-top: 1%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 13%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 384px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 70vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -50vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1d539e;
+  }
+
+  .plan:hover {
+    border: 1px solid #1e2338;
+    transition: 0.5s;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.8%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 33%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 80%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.425rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 1.175rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 0 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-free .advantages {
+    margin-bottom: 0;
+  }
+
+  .plan-profissional .advantages {
+    margin-bottom: 11%;
+  }
+
+  .plan-profissional {
+    margin-top: 1%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 13%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
+  }
+}
+
+@media (max-width: 294px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .container-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    height: 75vh;
+    width: 100%;
+    background-color: #1d539e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container2 {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: -55vh;
+  }
+
+  .content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21vh;
+  }
+
+  header {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.063rem;
+    margin: 6% auto 2%;
+  }
+
+  header .sub-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    text-align: center;
+    width: 89%;
+  }
+
+  .plans {
+    display: flex;
+    gap: 1.25rem;
+    color: #1e2338;
+    margin: 0 auto;
+    justify-content: center;
+    width: 95vw;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .plan {
+    background-color: #ffffff;
+    border-radius: 0.652rem;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1d539e;
+  }
+
+  .plan:hover {
+    border: 1px solid #1e2338;
+    transition: 0.5s;
+  }
+
+  .plan-free,
+  .plan-profissional {
+    margin-top: 5.8%;
+  }
+
+  .plan-basic {
+    margin-top: 5.8%;
+  }
+
+  .popular {
+    width: 100%;
+  }
+
+  .agroup-basic-popular {
+    width: 100%;
+    height: auto;
+    background: #ffcc29;
+    box-shadow: 0 0.063rem 0.125rem rgba(142, 150, 185, 0.25);
+    border-radius: 0.625rem;
+  }
+
+  .agroup-basic-popular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .paragraph-basic {
+    width: 24%;
+    height: 30%;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+    color: #1d539e;
+    margin: 6% 0 6% 6%;
+  }
+
+  .border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 33%;
+    height: auto;
+    background: #1d539e;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 80%;
+    line-height: 1rem;
+    color: #ffffff;
+    margin: 5%;
+  }
+
+  .plan-basic .value {
+    margin: 3% 6%;
+  }
+
+  .plan-free .value,
+  .plan-profissional .value {
+    margin: 0 0 3% 6%;
+  }
+
+  .value .paragraph-plan-basic,
+  .value .paragraph-plan-profissional {
+    margin: 7% 0 5.5% 3%;
+    font-weight: 600;
+    font-size: 1.425rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.063rem;
+  }
+
+  .value .title-value .small {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+  }
+
+  .value .title-value .small .gray {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    color: #828799;
+    margin-left: 1.5%;
+  }
+
+  .value .description-plan {
+    font-weight: 400;
+    font-size: 1.175rem;
+    line-height: 1.188rem;
+    color: #828799;
+    margin: 3% 2.063rem 0 0;
+    width: 87%;
+  }
+
+  .divisor {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    margin: 4% 8% 20% 7%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan-free .advantages {
+    margin-bottom: 0;
+  }
+
+  .plan-profissional .advantages {
+    margin-bottom: 11%;
+  }
+
+  .plan-profissional {
+    margin-top: 1%;
+  }
+
+  .advantages .img-check {
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.938rem;
+  }
+
+  .advantage {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    margin-right: 10%;
+  }
+
+  .advantages .advantage:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  .plan-free .advantages .advantage:nth-last-of-type(1) {
+    margin-bottom: 17.6%;
+  }
+
+  .button-advantage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 3.063rem;
+    border: 0.063rem solid #1d539e;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  .plan-free .button-advantage:hover,
+  .plan-free .button-advantage:hover button:hover,
+  .plan-profissional .button-advantage:hover,
+  .plan-profissional .button-advantage:hover button:hover {
+    background-color: #1d539e;
+    color: #ffffff;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .button-advantage:hover,
+  .plan-basic .button-advantage button:hover {
+    background-color: #ffffff;
+    color: #1d539e;
+    transition: 0.5s ease-in;
+  }
+
+  .plan-basic .advantages {
+    margin-bottom: 13%;
+  }
+
+  button {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
+    border: none;
+    color: #1d539e;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem;
+  }
+
+  .plan-basic .button-advantage,
+  .plan-basic button {
+    background-color: #1d539e;
+    color: #ffffff;
+  }
+
+  footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .credits h4,
+  a {
+    color: #1d539e;
+    text-align: center;
   }
 }
